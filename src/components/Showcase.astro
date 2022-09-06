@@ -1,0 +1,44 @@
+---
+import logos from '../images/framework-logos.png';
+import logosSmall from '../images/framework-logos-small.png';
+
+export interface Props {
+  heading?: string;
+  text?: string;
+  showExtra?: boolean;
+}
+
+const {
+  heading = 'Welcome to My First Astro Site!',
+  text = ' Build super fast HTML-first websites using your favorite JavaScript frameworks',
+  showExtra = false
+} = Astro.props as Props;
+---
+
+<section
+  class='bg-gradient-to-b from-neutral-900 to-purple-900 text-center text-white px-16'
+>
+  <h1 class='text-white'>{heading}</h1>
+  <p class='text-lg font-semibold'>{text}</p>
+  {
+    showExtra && (
+      <>
+        <div>
+          <img
+            src={logos}
+            alt=''
+            class='hidden md:flex rounded-lg mx-auto h-16'
+          />
+          <img
+            src={logosSmall}
+            alt=''
+            class='md:hidden rounded-lg mx-auto h-16'
+          />
+        </div>
+        <p>
+          <small> This is a demo website built with the Astro</small>
+        </p>
+      </>
+    )
+  }
+</section>

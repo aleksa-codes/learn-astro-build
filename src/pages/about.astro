@@ -1,0 +1,74 @@
+---
+import Layout from '../layouts/Layout.astro';
+import logos from '../images/deploy-logos.png';
+import logosSmall from '../images/deploy-logos-small.png';
+import Card from '../components/Card.astro';
+---
+
+<!-- about page -->
+<Layout>
+  <div class='max-w-6xl w-full mx-auto p-8'>
+    <h1 class='text-center'>About</h1>
+    <p class='mt-4'>
+      This is a simple blog built with Astro. It uses Astro's built-in Markdown
+      support to render blog posts. It is blazing fast and has a great developer
+      experience.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad laborum nihil
+      cupiditate dolores ipsam quidem officia id vitae esse, doloremque debitis
+      dicta exercitationem iure rem laboriosam sint maiores eveniet culpa. Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Ipsam blanditiis saepe
+      dolor laudantium quisquam inventore neque officiis asperiores temporibus!
+      Eum sint ea doloribus voluptatem, officia natus reiciendis illum eaque
+      itaque.
+    </p>
+    <Card
+      title='Use the tools you already love'
+      body='Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam blanditiis saepe dolor laudantium quisquam inventore neque officiis asperiores temporibus! Eum sint ea doloribus voluptatem, officia natus reiciendis illum eaque itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam blanditiis saepe dolor laudantium quisquam inventore neque officiis asperiores temporibus! Eum sint ea doloribus voluptatem, officia natus reiciendis illum eaque itaque.'
+    />
+    <h2>Deploy to anywhere, even the edge</h2>
+    <img src={logos} alt='' class='hidden md:flex rounded-lg h-16' />
+    <img src={logosSmall} alt='' class='md:hidden rounded-lg h-16' />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam blanditiis
+      saepe dolor laudantium quisquam inventore neque officiis asperiores
+      temporibus! Eum sint ea doloribus voluptatem, officia natus reiciendis
+      illum eaque itaque.
+    </p>
+    <h2>Join our Community</h2>
+    <p>
+      Join our active and friendly community on Discord to get help, share
+      ideas, and connect with other Astro users.
+    </p>
+    <ul>
+      <li>
+        <a
+          href='https://astro.build/chat'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          Join the Discord
+        </a>
+      </li>
+      <li>
+        <a
+          href='https://astro.build/community'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          Community Guidelines
+        </a>
+      </li>
+      <li>
+        <a
+          href='https://astro.build/code-of-conduct'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          Code of Conduct
+        </a>
+      </li>
+    </ul>
+  </div>
+</Layout>

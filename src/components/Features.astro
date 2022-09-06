@@ -1,0 +1,28 @@
+---
+import Card from './Card.astro';
+
+const featuresData = [
+  {
+    title: 'Zero JavaScript Runtime',
+    body: 'Astro renders HTMLon the server and strips away remaining, unsued Javascript.'
+  },
+  {
+    title: 'The Power of Islands',
+    body: 'Need interactive UI? Load individual, non-blocking component islands in parallel.'
+  },
+  {
+    title: 'Lazy-loading Islands',
+    body: "Components only hydrate when they scroll into visualViewport. If you don't see it, Astro won't load it."
+  }
+];
+---
+
+<section
+  class='flex flex-col md:flex-row justify-center max-w-6xl mx-auto px-8 gap-4'
+>
+  {
+    featuresData.map((feature) => (
+      <Card title={feature.title} body={feature.body} />
+    ))
+  }
+</section>

@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Showcase from '../components/Showcase.astro';
+import Features from '../components/Features.astro';
+import Tabs from '../components/Tabs.astro';
+const name = 'Astro';
+const style = 'text-purple-600';
+---
+
+<Layout>
+  <Showcase showExtra={true} />
+  <Features />
+  <div class='max-w-6xl px-8 w-full mx-auto'>
+    <h2 class='text-center'>Get Started With Astro</h2>
+    <p class='text-left'>
+      Get new Astro procject up and running locally with this helpful <code
+        >create-astro</code
+      > CLI wizard.
+    </p>
+    <Tabs
+      headings={['npm', 'yarn', 'pnpm']}
+      contents={[
+        'npm create astro@latest',
+        'yarn create astro',
+        'pnpm create astro@latest'
+      ]}
+    />
+    <h3>Start Building</h3>
+    <p>
+      Once you've got your project set up, you can start building your site with
+      Astro components. Lorem ipsum dolor sit amet consectetur, adipisicing
+      elit. Provident, distinctio rem accusantium dolor illo pariatur
+      repudiandae repellendus sapiente aliquid quia quam voluptas sed
+      perferendis blanditiis cupiditate fuga, fugiat eius doloremque? Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Placeat aut consectetur
+      voluptas at nesciunt, doloremque enim ducimus dicta? Animi ducimus magnam
+      consequatur! Mollitia reiciendis odit quod dolores consequatur suscipit
+      quam?
+    </p>
+  </div>
+</Layout>

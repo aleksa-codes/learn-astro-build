@@ -1,0 +1,57 @@
+---
+const activeTextColor = 'text-purple-500';
+export interface Props {
+  headings: string[];
+  contents: string[];
+}
+
+const { headings, contents } = Astro.props as Props;
+---
+
+<div class='tabs w-full'>
+  <div
+    class='tabs-header text-lg font-bold flex flex-row justify-start gap-8 text-white bg-neutral-900 p-2 px-4 uppercase rounded-lg rounded-b-none'
+  >
+    {
+      headings.map((heading, index) => (
+        <span class='cursor-pointer' data-tab={index}>
+          {heading}
+        </span>
+      ))
+    }
+  </div>
+  <div
+    class='tabs-content flex flex-col items-start text-black bg-purple-500 p-4 rounded-lg rounded-t-none'
+  >
+    {contents.map((content, index) => <code data-tab={index}>{content}</code>)}
+  </div>
+</div>
+<script define:vars={{ activeTextColor }}>
+  function createTabs() {
+    const tabs = document.querySelectorAll('.tabs');
+    tabs.forEach((tab) => {
+      const tabsHeader = document.querySelector('.tabs-header');
+      const tabsContent = document.querySelector('.tabs-content');
+      const tabsHeaderChildren = tabsHeader.children;
+      const tabsContentChildren = tabsContent.children;
+      tabsHeaderChildren[0].classList.add(activeTextColor);
+      for (let i = 0; i < tabsContentChildren.length; i++) {
+        tabsContentChildren[i].classList.add('hidden');
+      }
+      tabsContentChildren[0].classList.remove('hidden');
+      for (let i = 0; i < tabsHeaderChildren.length; i++) {
+        tabsHeaderChildren[i].addEventListener('click', () => {
+          for (let j = 0; j < tabsHeaderChildren.length; j++) {
+            tabsHeaderChildren[j].classList.remove(activeTextColor);
+          }
+          tabsHeaderChildren[i].classList.add(activeTextColor);
+          for (let j = 0; j < tabsContentChildren.length; j++) {
+            tabsContentChildren[j].classList.add('hidden');
+          }
+          tabsContentChildren[i].classList.remove('hidden');
+        });
+      }
+    });
+  }
+  createTabs();
+</script>
