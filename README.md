@@ -1,6 +1,6 @@
 # Welcome to [Astro](https://astro.build)
 
-Website following the Course from one and only [Brad Traversy](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA).
+Website following the Course from one and only [Brad Traversy](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA), with one small change, I am using TailwindCSS instead of CSS.
 
 ## 🚀 Project Structure
 
