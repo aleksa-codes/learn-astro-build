@@ -21,7 +21,7 @@ const { headings, contents } = Astro.props as Props;
     }
   </div>
   <div
-    class='tabs-content flex flex-col items-start text-black bg-purple-500 p-4 rounded-lg rounded-t-none'
+    class='tabs-content flex flex-col items-start text-black bg-purple-400 p-4 rounded-lg rounded-t-none'
   >
     {contents.map((content, index) => <code data-tab={index}>{content}</code>)}
   </div>
