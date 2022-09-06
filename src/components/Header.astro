@@ -1,5 +1,4 @@
 ---
-import { Image } from '@astrojs/image/components';
 import logo from '../images/logo.svg';
 ---
 
@@ -7,12 +6,12 @@ import logo from '../images/logo.svg';
   <div class='flex flex-row mx-auto max-w-6xl p-8'>
     <div class='flex items-cente'>
       <a href='/first-astro-site/'>
-        <Image
+        <img
           src={logo}
           alt='logo'
           class='h-8 w-auto'
-          width={512}
-          height={160}
+          width='256'
+          height='128'
         />
       </a>
     </div>
@@ -28,12 +27,12 @@ import logo from '../images/logo.svg';
             Home</a
           >
         </li><li>
-          <a href='/first-astro-site/about' class='text-white no-underline'
+          <a href='/first-astro-site/about.html' class='text-white no-underline'
             >About</a
           >
         </li>
         <li>
-          <a href='/first-astro-site/blog' class='text-white no-underline'
+          <a href='/first-astro-site/blog.html' class='text-white no-underline'
             >Blog</a
           >
         </li>
