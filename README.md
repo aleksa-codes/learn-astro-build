@@ -6,7 +6,7 @@ Website following the Course from one and only [Brad Traversy](https://www.youtu
 
 Inside of your Astro project, you'll see the following folders and files:
 
-```
+```bash
 /
 ├── public/
 │   └── favicon.svg
