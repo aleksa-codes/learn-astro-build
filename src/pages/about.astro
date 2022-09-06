@@ -27,9 +27,21 @@ import Card from '../components/Card.astro';
       title='Use the tools you already love'
       body='Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam blanditiis saepe dolor laudantium quisquam inventore neque officiis asperiores temporibus! Eum sint ea doloribus voluptatem, officia natus reiciendis illum eaque itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam blanditiis saepe dolor laudantium quisquam inventore neque officiis asperiores temporibus! Eum sint ea doloribus voluptatem, officia natus reiciendis illum eaque itaque.'
     />
-    <h2>Deploy to anywhere, even the edge</h2>
-    <img src={logos} alt='' class='hidden md:flex rounded-lg h-16' />
-    <img src={logosSmall} alt='' class='md:hidden rounded-lg h-16' />
+    <h2 class='text-center md:text-left'>Deploy to anywhere, even the edge</h2>
+    <img
+      src={logos}
+      alt=''
+      class='hidden md:flex rounded-lg h-16 w-auto'
+      width='512'
+      height='64'
+    />
+    <img
+      src={logosSmall}
+      alt=''
+      class='md:hidden rounded-lg h-16 w-auto mx-auto'
+      width='256'
+      height='64'
+    />
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam blanditiis
       saepe dolor laudantium quisquam inventore neque officiis asperiores
