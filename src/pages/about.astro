@@ -1,4 +1,5 @@
 ---
+import { Image } from '@astrojs/image/components';
 import Layout from '../layouts/Layout.astro';
 import logos from '../images/deploy-logos.png';
 import logosSmall from '../images/deploy-logos-small.png';
@@ -28,19 +29,19 @@ import Card from '../components/Card.astro';
       body='Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam blanditiis saepe dolor laudantium quisquam inventore neque officiis asperiores temporibus! Eum sint ea doloribus voluptatem, officia natus reiciendis illum eaque itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam blanditiis saepe dolor laudantium quisquam inventore neque officiis asperiores temporibus! Eum sint ea doloribus voluptatem, officia natus reiciendis illum eaque itaque.'
     />
     <h2 class='text-center md:text-left'>Deploy to anywhere, even the edge</h2>
-    <img
+    <Image
       src={logos}
       alt=''
       class='hidden md:flex rounded-lg h-16 w-auto'
-      width='512'
-      height='64'
+      width={512}
+      height={64}
     />
-    <img
+    <Image
       src={logosSmall}
       alt=''
       class='md:hidden rounded-lg h-16 w-auto mx-auto'
-      width='256'
-      height='64'
+      width={256}
+      height={64}
     />
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam blanditiis

@@ -1,4 +1,5 @@
 ---
+import { Image } from '@astrojs/image/components';
 import logos from '../images/framework-logos.png';
 import logosSmall from '../images/framework-logos-small.png';
 
@@ -24,14 +25,14 @@ const {
     showExtra && (
       <>
         <div>
-          <img
+          <Image
             src={logos}
             alt=''
             class='hidden md:flex rounded-lg mx-auto h-16 w-auto'
             height='64'
-            width='512'
+            width='550'
           />
-          <img
+          <Image
             src={logosSmall}
             alt=''
             class='md:hidden rounded-lg mx-auto h-16 w-auto'
