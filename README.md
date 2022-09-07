@@ -2,6 +2,10 @@
 
 Website following the Course from one and only [Brad Traversy](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA), with one small change, I am using TailwindCSS instead of CSS.
 
+<!-- image -->
+
+![Screenshot](./src/images/screen.png)
+
 ## 🚀 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
