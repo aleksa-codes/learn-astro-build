@@ -11,7 +11,10 @@ const posts = await Astro.glob('../posts/*.md');
   <div class='max-w-6xl w-full mx-auto p-8'>
     {
       posts.map((post: any) => (
-        <Card title={post.frontmatter.title} link={post.frontmatter.slug}>
+        <Card
+          title={post.frontmatter.title}
+          link={'/first-astro-site/' + post.frontmatter.slug}
+        >
           <div>
             Written by <strong>{post.frontmatter.author}</strong> on{' '}
             {new Date(post.frontmatter.date).toLocaleDateString()}
