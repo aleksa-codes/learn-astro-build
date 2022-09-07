@@ -10,11 +10,11 @@ const { headings, contents } = Astro.props as Props;
 
 <div class='tabs w-full'>
   <div
-    class='tabs-header text-lg font-bold flex flex-row justify-start gap-8 text-white bg-neutral-900 p-2 px-4 uppercase rounded-lg rounded-b-none'
+    class='tabs-header flex flex-row justify-start gap-8 text-white bg-neutral-900 p-2 px-4 uppercase rounded-lg rounded-b-none'
   >
     {
       headings.map((heading, index) => (
-        <span class='cursor-pointer' data-tab={index}>
+        <span class='text-base font-semibold cursor-pointer' data-tab={index}>
           {heading}
         </span>
       ))

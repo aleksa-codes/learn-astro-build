@@ -4,12 +4,13 @@ import Layout from '../layouts/Layout.astro';
 import logos from '../images/deploy-logos.png';
 import logosSmall from '../images/deploy-logos-small.png';
 import Card from '../components/Card.astro';
+import Showcase from '../components/Showcase.astro';
 ---
 
 <!-- about page -->
-<Layout>
+<Layout title='About | Astro'>
+  <Showcase heading='About' text='' />
   <div class='max-w-6xl w-full mx-auto p-8'>
-    <h1 class='text-center'>About</h1>
     <p class='mt-4'>
       This is a simple blog built with Astro. It uses Astro's built-in Markdown
       support to render blog posts. It is blazing fast and has a great developer
