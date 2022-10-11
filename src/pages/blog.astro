@@ -13,7 +13,7 @@ const posts = await Astro.glob('../posts/*.md');
       posts.map((post: any) => (
         <Card
           title={post.frontmatter.title}
-          link={'/first-astro-site/' + post.frontmatter.slug}
+          link={'/learn-astro-build/' + post.frontmatter.slug}
         >
           <div>
             Written by <strong>{post.frontmatter.author}</strong> on{' '}
