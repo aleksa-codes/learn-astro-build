@@ -5,7 +5,7 @@ import image from '@astrojs/image';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://aleksastojsic.github.io',
+  site: 'https://aleksa-codes.github.io',
   base: '/learn-astro-build/',
   integrations: [tailwind(), image()]
 });
